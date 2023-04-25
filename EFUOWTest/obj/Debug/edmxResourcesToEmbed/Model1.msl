@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PeopleModelContainer" CdmEntityContainer="PeopleEntities">
+    <EntitySetMapping Name="Hobbies">
+      <EntityTypeMapping TypeName="PeopleModel.Hobby">
+        <MappingFragment StoreEntitySet="Hobbies">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Hobby_name" ColumnName="Hobby_name" />
+          <ScalarProperty Name="Person_id" ColumnName="Person_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="PeopleModel.Person">
+        <MappingFragment StoreEntitySet="People">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Person_name" ColumnName="Person_name" />
+          <ScalarProperty Name="Person_surname" ColumnName="Person_surname" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
